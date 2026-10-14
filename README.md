@@ -1,4 +1,5 @@
-# iontraps-qrc
+# Iontraps-qrc
+Asser Abdelnaby ,
 
 Quantum reservoir computing on a trapped-ion (all-to-all coupled) register for network-intrusion and
 **zero-day** detection on NF-UNSW-NB15. The study asks whether more qubits or more time steps (L) help a
