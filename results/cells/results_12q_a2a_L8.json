@@ -1,0 +1,74 @@
+{
+  "spec": {
+    "tag": "12q_a2a_L8",
+    "n_in": 6,
+    "n_mem": 6,
+    "n_steps": 8,
+    "dt": 0.3,
+    "topology": "all_to_all",
+    "seed": 1234,
+    "j_scale": 0.7977240352174656,
+    "h_scale": 1.0,
+    "field_draw": "annulus",
+    "in_sites": null,
+    "final_mix": true,
+    "in_gain": 3.0,
+    "final_basis": "z"
+  },
+  "backend": "numpy",
+  "n_shots": 512,
+  "options": {
+    "n_train": 400,
+    "n_test": 300,
+    "n_zeroday": 150,
+    "balance": "balanced",
+    "pad_mode": "reupload",
+    "correlators": false,
+    "drop_noise_floor": true,
+    "slice_order": "interleave",
+    "sequence_mode": "features",
+    "dataset": "nfunsw",
+    "zero_day": "Exploits",
+    "in_gain": 3.0,
+    "final_basis": "z",
+    "exact": false
+  },
+  "budget": {
+    "n_2q": 594,
+    "n_1q": 222,
+    "n_meas": 60,
+    "depth_2q": 99
+  },
+  "results": {
+    "supervised_quantum": 0.9794666666666667,
+    "supervised_quantum_denoised": 0.9839111111111111,
+    "supervised_classical": 0.986488888888889,
+    "diagnostics": {
+      "n_features": 60,
+      "n_features_above_shot_floor": 48,
+      "p_over_n": 0.15,
+      "pca_components": 53,
+      "encoding_slots": 96,
+      "reupload_factor": 1.8113207547169812,
+      "train_benign": 200,
+      "train_attack": 200,
+      "test_benign": 150,
+      "test_attack": 150
+    },
+    "zeroday_quantum_denoised": {
+      "AUC": 0.8818666666666667,
+      "@1%FA": 0.03333333333333333,
+      "@5%FA": 0.22666666666666666
+    },
+    "zeroday_quantum": {
+      "AUC": 0.8831111111111111,
+      "@1%FA": 0.04666666666666667,
+      "@5%FA": 0.21333333333333335
+    },
+    "zeroday_classical": {
+      "AUC": 0.887688888888889,
+      "@1%FA": 0.09333333333333334,
+      "@5%FA": 0.11333333333333333
+    }
+  }
+}

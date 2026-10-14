@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+data/raw/*.parquet
+results/quick_check/
+results/runs/
+reservoir_*.npz
+*.log
